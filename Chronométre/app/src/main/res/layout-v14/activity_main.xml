@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:weightSum="100"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="30">
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="100sp"
+            android:id="@+id/chronometer2" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="70"
+        >
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:paddingTop="5dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:background="#58C1C0ff"
+                android:layout_weight="100"
+                android:id="@+id/bstart"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:paddingTop="5dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:background="#58C1C0ff"
+                android:layout_weight="100"
+                android:id="@+id/bStop"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:paddingTop="5dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:background="#58C1C0ff"
+                android:layout_weight="100"
+                android:id="@+id/breset"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:paddingTop="5dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:background="#58C1C0ff"
+                android:layout_weight="100"
+                android:id="@+id/babout"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
